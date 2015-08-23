@@ -10,6 +10,8 @@ makeCacheMatrix <- function(x = matrix()) {
      m <<- NULL
     }
     get <- function() x
+    x<-matrix (rep(1:10), 10,nrow=10, ncol=10)
+  
     setinv <- function(solve) m <<- inv
     getinv <- function() m
     
